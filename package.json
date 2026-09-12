@@ -2,6 +2,13 @@
   "name": "@arylo-scripts/gm-vue",
   "version": "1.0.0",
   "description": "Vue userscript helpers backed by the page-level Vue runtime.",
+  "keywords": [
+    "userscript",
+    "tampermonkey",
+    "greasemonkey",
+    "vue",
+    "typescript"
+  ],
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
@@ -40,9 +47,14 @@
   "bugs": {
     "url": "https://github.com/arylo-scripts/gm-vue/issues"
   },
+  "author": "Arylo Yeung <arylo.open@gmail.com>",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
   "license": "MIT",
   "devDependencies": {
-    "@arylo-scripts/tsconfig": "github:arylo-scripts/tsconfig#master",
+    "@arylo-scripts/tsconfig": "^1.0.0",
     "concurrently": "^8.2.2",
     "oxfmt": "^0.35.0",
     "oxlint": "^1.58.0",
