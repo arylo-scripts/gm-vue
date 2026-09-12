@@ -1,14 +1,14 @@
-import { getVueValue, type VueExport } from './shared'
+import { getVueValue } from './shared'
 
-export const Fragment: VueExport<'Fragment'> = /* @__PURE__ */ getVueValue('Fragment')
+export const Fragment: typeof import('vue').Fragment = /* @__PURE__ */ getVueValue('Fragment')
 
-export const KeepAlive: VueExport<'KeepAlive'> = /* @__PURE__ */ getVueValue('KeepAlive')
+export const KeepAlive: typeof import('vue').KeepAlive = /* @__PURE__ */ getVueValue('KeepAlive')
 
-export const Transition: VueExport<'Transition'> = /* @__PURE__ */ getVueValue('Transition')
+export const Transition: typeof import('vue').Transition = /* @__PURE__ */ getVueValue('Transition')
 
-export const TransitionGroup: VueExport<'TransitionGroup'> =
+export const TransitionGroup: typeof import('vue').TransitionGroup =
   /* @__PURE__ */ getVueValue('TransitionGroup')
 
-export const Teleport: VueExport<'Teleport'> = /* @__PURE__ */ getVueValue('Teleport')
+export const Teleport: typeof import('vue').Teleport = /* @__PURE__ */ getVueValue('Teleport')
 
-export const Suspense: VueExport<'Suspense'> = /* @__PURE__ */ getVueValue('Suspense')
+export const Suspense: typeof import('vue').Suspense = /* @__PURE__ */ getVueValue('Suspense')

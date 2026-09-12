@@ -1,113 +1,117 @@
-import { getVueValue, type VueExport } from './shared'
+import { getVueValue } from './shared'
 
 export type { MaybeRef, MaybeRefOrGetter } from 'vue'
 
 // Core
 
-export const readonly: VueExport<'readonly'> = /* @__PURE__ */ getVueValue('readonly')
+export const readonly: typeof import('vue').readonly = /* @__PURE__ */ getVueValue('readonly')
 
-export const ref: VueExport<'ref'> = /* @__PURE__ */ getVueValue('ref')
+export const ref: typeof import('vue').ref = /* @__PURE__ */ getVueValue('ref')
 
-export const reactive: VueExport<'reactive'> = /* @__PURE__ */ getVueValue('reactive')
+export const reactive: typeof import('vue').reactive = /* @__PURE__ */ getVueValue('reactive')
 
-export const computed: VueExport<'computed'> = /* @__PURE__ */ getVueValue('computed')
+export const computed: typeof import('vue').computed = /* @__PURE__ */ getVueValue('computed')
 
-export const watch: VueExport<'watch'> = /* @__PURE__ */ getVueValue('watch')
+export const watch: typeof import('vue').watch = /* @__PURE__ */ getVueValue('watch')
 
-export const watchEffect: VueExport<'watchEffect'> = /* @__PURE__ */ getVueValue('watchEffect')
+export const watchEffect: typeof import('vue').watchEffect =
+  /* @__PURE__ */ getVueValue('watchEffect')
 
-export const watchPostEffect: VueExport<'watchPostEffect'> =
+export const watchPostEffect: typeof import('vue').watchPostEffect =
   /* @__PURE__ */ getVueValue('watchPostEffect')
 
-export const watchSyncEffect: VueExport<'watchSyncEffect'> =
+export const watchSyncEffect: typeof import('vue').watchSyncEffect =
   /* @__PURE__ */ getVueValue('watchSyncEffect')
 
-export const onWatcherCleanup: VueExport<'onWatcherCleanup'> =
+export const onWatcherCleanup: typeof import('vue').onWatcherCleanup =
   /* @__PURE__ */ getVueValue('onWatcherCleanup')
 
 // Utilities
 
-export const isRef: VueExport<'isRef'> = /* @__PURE__ */ getVueValue('isRef')
+export const isRef: typeof import('vue').isRef = /* @__PURE__ */ getVueValue('isRef')
 
-export const unref: VueExport<'unref'> = /* @__PURE__ */ getVueValue('unref')
+export const unref: typeof import('vue').unref = /* @__PURE__ */ getVueValue('unref')
 
-export const toValue: VueExport<'toValue'> = /* @__PURE__ */ getVueValue('toValue')
+export const toValue: typeof import('vue').toValue = /* @__PURE__ */ getVueValue('toValue')
 
-export const toRef: VueExport<'toRef'> = /* @__PURE__ */ getVueValue('toRef')
+export const toRef: typeof import('vue').toRef = /* @__PURE__ */ getVueValue('toRef')
 
-export const toRefs: VueExport<'toRefs'> = /* @__PURE__ */ getVueValue('toRefs')
+export const toRefs: typeof import('vue').toRefs = /* @__PURE__ */ getVueValue('toRefs')
 
-export const isProxy: VueExport<'isProxy'> = /* @__PURE__ */ getVueValue('isProxy')
+export const isProxy: typeof import('vue').isProxy = /* @__PURE__ */ getVueValue('isProxy')
 
-export const isReactive: VueExport<'isReactive'> = /* @__PURE__ */ getVueValue('isReactive')
+export const isReactive: typeof import('vue').isReactive = /* @__PURE__ */ getVueValue('isReactive')
 
-export const isReadonly: VueExport<'isReadonly'> = /* @__PURE__ */ getVueValue('isReadonly')
+export const isReadonly: typeof import('vue').isReadonly = /* @__PURE__ */ getVueValue('isReadonly')
 
 // Advanced
 
-export const shallowRef: VueExport<'shallowRef'> = /* @__PURE__ */ getVueValue('shallowRef')
+export const shallowRef: typeof import('vue').shallowRef = /* @__PURE__ */ getVueValue('shallowRef')
 
-export const triggerRef: VueExport<'triggerRef'> = /* @__PURE__ */ getVueValue('triggerRef')
+export const triggerRef: typeof import('vue').triggerRef = /* @__PURE__ */ getVueValue('triggerRef')
 
-export const customRef: VueExport<'customRef'> = /* @__PURE__ */ getVueValue('customRef')
+export const customRef: typeof import('vue').customRef = /* @__PURE__ */ getVueValue('customRef')
 
-export const shallowReactive: VueExport<'shallowReactive'> =
+export const shallowReactive: typeof import('vue').shallowReactive =
   /* @__PURE__ */ getVueValue('shallowReactive')
 
-export const shallowReadonly: VueExport<'shallowReadonly'> =
+export const shallowReadonly: typeof import('vue').shallowReadonly =
   /* @__PURE__ */ getVueValue('shallowReadonly')
 
-export const toRaw: VueExport<'toRaw'> = /* @__PURE__ */ getVueValue('toRaw')
+export const toRaw: typeof import('vue').toRaw = /* @__PURE__ */ getVueValue('toRaw')
 
-export const markRaw: VueExport<'markRaw'> = /* @__PURE__ */ getVueValue('markRaw')
+export const markRaw: typeof import('vue').markRaw = /* @__PURE__ */ getVueValue('markRaw')
 
-export const effectScope: VueExport<'effectScope'> = /* @__PURE__ */ getVueValue('effectScope')
+export const effectScope: typeof import('vue').effectScope =
+  /* @__PURE__ */ getVueValue('effectScope')
 
-export const getCurrentInstance: VueExport<'getCurrentInstance'> =
+export const getCurrentInstance: typeof import('vue').getCurrentInstance =
   /* @__PURE__ */ getVueValue('getCurrentInstance')
 
-export const onScopeDispose: VueExport<'onScopeDispose'> =
+export const onScopeDispose: typeof import('vue').onScopeDispose =
   /* @__PURE__ */ getVueValue('onScopeDispose')
 
 // Lifecycle
 
-export const onMounted: VueExport<'onMounted'> = /* @__PURE__ */ getVueValue('onMounted')
+export const onMounted: typeof import('vue').onMounted = /* @__PURE__ */ getVueValue('onMounted')
 
-export const onUpdated: VueExport<'onUpdated'> = /* @__PURE__ */ getVueValue('onUpdated')
+export const onUpdated: typeof import('vue').onUpdated = /* @__PURE__ */ getVueValue('onUpdated')
 
-export const onUnmounted: VueExport<'onUnmounted'> = /* @__PURE__ */ getVueValue('onUnmounted')
+export const onUnmounted: typeof import('vue').onUnmounted =
+  /* @__PURE__ */ getVueValue('onUnmounted')
 
-export const onBeforeMount: VueExport<'onBeforeMount'> =
+export const onBeforeMount: typeof import('vue').onBeforeMount =
   /* @__PURE__ */ getVueValue('onBeforeMount')
 
-export const onBeforeUpdate: VueExport<'onBeforeUpdate'> =
+export const onBeforeUpdate: typeof import('vue').onBeforeUpdate =
   /* @__PURE__ */ getVueValue('onBeforeUpdate')
 
-export const onBeforeUnmount: VueExport<'onBeforeUnmount'> =
+export const onBeforeUnmount: typeof import('vue').onBeforeUnmount =
   /* @__PURE__ */ getVueValue('onBeforeUnmount')
 
-export const onErrorCaptured: VueExport<'onErrorCaptured'> =
+export const onErrorCaptured: typeof import('vue').onErrorCaptured =
   /* @__PURE__ */ getVueValue('onErrorCaptured')
 
-export const onActivated: VueExport<'onActivated'> = /* @__PURE__ */ getVueValue('onActivated')
+export const onActivated: typeof import('vue').onActivated =
+  /* @__PURE__ */ getVueValue('onActivated')
 
-export const onDeactivated: VueExport<'onDeactivated'> =
+export const onDeactivated: typeof import('vue').onDeactivated =
   /* @__PURE__ */ getVueValue('onDeactivated')
 
 // Dependency Injection
 
-export const provide: VueExport<'provide'> = /* @__PURE__ */ getVueValue('provide')
+export const provide: typeof import('vue').provide = /* @__PURE__ */ getVueValue('provide')
 
-export const inject: VueExport<'inject'> = /* @__PURE__ */ getVueValue('inject')
+export const inject: typeof import('vue').inject = /* @__PURE__ */ getVueValue('inject')
 
-export const hasInjectionContext: VueExport<'hasInjectionContext'> =
+export const hasInjectionContext: typeof import('vue').hasInjectionContext =
   /* @__PURE__ */ getVueValue('hasInjectionContext')
 
 // Helper
 
-export const useSlots: VueExport<'useSlots'> = /* @__PURE__ */ getVueValue('useSlots')
+export const useSlots: typeof import('vue').useSlots = /* @__PURE__ */ getVueValue('useSlots')
 
-export const useTemplateRef: VueExport<'useTemplateRef'> =
+export const useTemplateRef: typeof import('vue').useTemplateRef =
   /* @__PURE__ */ getVueValue('useTemplateRef')
 
-export const useId: VueExport<'useId'> = /* @__PURE__ */ getVueValue('useId')
+export const useId: typeof import('vue').useId = /* @__PURE__ */ getVueValue('useId')
