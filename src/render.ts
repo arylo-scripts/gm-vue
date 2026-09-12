@@ -1,7 +1,7 @@
-import { getVueValue } from './shared'
+import { getVueValue, type VueExport } from './shared'
 
-export const h = /* @__PURE__ */ getVueValue('h')
+export const h: VueExport<'h'> = /* @__PURE__ */ getVueValue('h')
 
-export const compile = /* @__PURE__ */ getVueValue('compile')
+export const compile: VueExport<'compile'> = /* @__PURE__ */ getVueValue('compile')
 
-export const mergeProps = /* @__PURE__ */ getVueValue('mergeProps')
+export const mergeProps: VueExport<'mergeProps'> = /* @__PURE__ */ getVueValue('mergeProps')
