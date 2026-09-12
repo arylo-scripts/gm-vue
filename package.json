@@ -15,6 +15,9 @@
   "files": [
     "dist"
   ],
+  "peerDependencies": {
+    "vue": "^3.5.29"
+  },
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "clean": "rimraf dist",
